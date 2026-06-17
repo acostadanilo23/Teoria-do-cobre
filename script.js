@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Função para buscar o README.md local ou online
     // Nota: quando acessado localmente via file://, pode dar erro de CORS. 
     // É recomendado rodar com um servidor local para testar, ou isso funcionará perfeitamente quando hospedado no Vercel.
-    fetch('README.md')
+    fetch('/README.md')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Falha ao carregar o arquivo README.md. Certifique-se de estar rodando em um servidor web (como Live Server ou Vercel).');
