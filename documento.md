@@ -897,12 +897,12 @@ O brilhantismo desse sistema é que o dreno é **proporcional à prosperidade**:
 
 O encantamento Fortune III multiplica a média de drops por bloco de minério:
 
-| Encantamento | Drop médio por bloco de Cobre | Multiplicador |
-|-------------|-------------------------------|---------------|
-| Sem Fortune | 2-5 (média ~3.5) | 1.0x |
-| Fortune I | Média ~4.7 | ~1.33x |
-| Fortune II | Média ~5.8 | ~1.67x |
-| Fortune III | Média ~7.7 | ~2.2x |
+| Encantamento | Drop médio por bloco de Cobre | Multiplicador | Máximo Possível |
+|-------------|-------------------------------|---------------|-----------------|
+| Sem Fortune | Média ~3.5 | 1.0x | 5 |
+| Fortune I | Média ~4.67 | ~1.33x | 10 |
+| Fortune II | Média ~6.125 | ~1.75x | 15 |
+| Fortune III | Média ~7.7 | ~2.2x | 20 |
 
 **Objeção comum:** "Fortune III causa inflação! Mais cobre por bloco = moeda desvalorizada!"
 
@@ -1241,10 +1241,10 @@ O Cobre Cru estabelece, portanto, um ambiente virtual **economicamente robusto, 
 |-------------|-------|
 | Geração | Y -16 a Y 112 (pico Y 48) |
 | Blocos por veia | 6-20 (variável por bioma) |
-| Drop sem Fortune | 2-5 Raw Copper |
-| Drop com Fortune I | 2-10 Raw Copper (média ~4.7) |
-| Drop com Fortune II | 2-15 Raw Copper (média ~5.8) |
-| Drop com Fortune III | 2-20 Raw Copper (média ~7.7) |
+| Drop sem Fortune | Média 3.5 (Máximo 5) Raw Copper |
+| Drop com Fortune I | Média 4.67 (Máximo 10) Raw Copper |
+| Drop com Fortune II | Média 6.125 (Máximo 15) Raw Copper |
+| Drop com Fortune III | Média 7.7 (Máximo 20) Raw Copper |
 | Drop com Silk Touch | 1 Copper Ore block |
 | XP dropado | 0-3 por bloco |
 | Biomas com bônus | Dripstone Caves (veias maiores) |
@@ -1279,6 +1279,31 @@ O Cobre Cru estabelece, portanto, um ambiente virtual **economicamente robusto, 
 | **Gold Ingot** | **~2.5%** | **1** | **Sim (+1% por nível)** |
 
 > **Nota crítica:** Zombie Piglins dropam **Gold Nuggets** e **Gold Ingots**, **NUNCA** Raw Gold (Ouro Cru).
+
+### A.5. Tabelas Gerais de Drop com Fortune
+
+| Minério (Ore) | Drop Padrão | Sem Fortune (Avg) | Sem Fortune (Max) | Fortune I (Avg) | Fortune I (Max) | Fortune II (Avg) | Fortune II (Max) | Fortune III (Avg) | Fortune III (Max) |
+|-----|------|------------------|------------------|-----------------|-----------------|------------------|------------------|-------------------|-------------------|
+| Coal Ore | Coal | 1 | 1 | 1.33 | 2 | 1.75 | 3 | 2.2 | 4 |
+| Diamond Ore | Diamond | 1 | 1 | 1.33 | 2 | 1.75 | 3 | 2.2 | 4 |
+| Emerald Ore | Emerald | 1 | 1 | 1.33 | 2 | 1.75 | 3 | 2.2 | 4 |
+| Iron Ore | Raw iron | 1 | 1 | 1.33 | 2 | 1.75 | 3 | 2.2 | 4 |
+| Copper Ore | 2-5 raw copper | 3.5 | 5 | 4.67 | 10 | 6.125 | 15 | 7.7 | 20 |
+| Gold Ore | Raw gold | 1 | 1 | 1.33 | 2 | 1.75 | 3 | 2.2 | 4 |
+| Nether Gold Ore | 2-6 gold nuggets| 4 | 6 | 5.33 | 12 | 7 | 18 | 8.8 | 24 |
+| Nether Quartz Ore| Nether quartz | 1 | 1 | 1.33 | 2 | 1.75 | 3 | 2.2 | 4 |
+| Lapis Lazuli Ore| 4-9 lapis lazuli| 6.5 | 9 | 8.67 | 18 | 11.375 | 27 | 14.3 | 36 |
+| Amethyst Cluster| 4 amethyst shards| 4 | 4 | 5.33 | 8 | 7 | 12 | 8.8 | 16 |
+
+**Cálculos de Drop (Probabilidades do Fortune):**
+
+| Multiplicador de Drop | Sem Fortune | Fortune I | Fortune II | Fortune III |
+|-----------------------|-------------|-----------|------------|-------------|
+| **1×** | 100% | 66% | 50% | 40% |
+| **2×** | - | 33% | 25% | 20% |
+| **3×** | - | - | 25% | 20% |
+| **4×** | - | - | - | 20% |
+| **Média Total** | **1.0×** | **1.33×** (+33%) | **1.75×** (+75%) | **2.2×** (+120%) |
 
 ---
 
